@@ -17,6 +17,7 @@ h1{
 .fa-plus{
   float: right;
 }
+
 #container{
   width: 360px;
   margin: 100px auto;
@@ -46,6 +47,7 @@ input{
   padding: 13px 13px 13px 20px;
   box-sizing: border-box;
   color: #2980b9;
+  border: 2px solid rgba(0, 0, 0, 0);
 }
 
 input:focus{
@@ -53,6 +55,24 @@ input:focus{
   outline: none;
   border: 2px solid #2980b9;
 }
+span{
+  background-color: #e74c3c;
+  color: #e74c3c;
+  height: 40px;
+  margin-right: 20px;
+  text-align: center;
+  color:white;
+  width: 0;
+  display: inline-block;
+  opacity: 0;
+  transition: 0.2s linear;
+
+}
+li:hover span{
+  width: 40px;
+  opacity: 1.0;
+}
+
 .completed{
   color: gray;
   text-decoration: line-through;
